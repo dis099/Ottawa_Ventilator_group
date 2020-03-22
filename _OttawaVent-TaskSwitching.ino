@@ -40,12 +40,12 @@ void setup()
 
   xTaskCreate(MyTask1, "Task1", 100, NULL, 1, NULL); //Lowest Priority
   xTaskCreate(MyTask2, "Task2", 100, NULL, 2, NULL);
-  xTaskCreate(MyTask1, "Task3", 100, NULL, 3, NULL);
-  xTaskCreate(MyTask2, "Task4", 100, NULL, 4, NULL);
-  xTaskCreate(MyTask1, "Task5", 100, NULL, 5, NULL);
-  xTaskCreate(MyTask2, "Task6", 100, NULL, 6, NULL);
-  xTaskCreate(MyTask1, "Task7", 100, NULL, 7, NULL);
-  xTaskCreate(MyTask2, "Task8", 100, NULL, 8, NULL); //Highest prioity
+  xTaskCreate(MyTask3, "Task3", 100, NULL, 3, NULL);
+  xTaskCreate(MyTask4, "Task4", 100, NULL, 4, NULL);
+  xTaskCreate(MyTask5, "Task5", 100, NULL, 5, NULL);
+  xTaskCreate(MyTask6, "Task6", 100, NULL, 6, NULL);
+  xTaskCreate(MyTask7, "Task7", 100, NULL, 7, NULL);
+  xTaskCreate(MyTask8, "Task8", 100, NULL, 8, NULL); //Highest prioity
   xTaskCreate(MyIdleTask, "IdleTask", 100, NULL, 0, NULL);
 }
 
